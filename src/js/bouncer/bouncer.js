@@ -540,7 +540,7 @@
 		for (var test in settings.customValidations) {
 			if (settings.customValidations.hasOwnProperty(test)) {
 				if (errors[test]) {
-					return customMessages[test] || messages[test] || messages.fallback;
+					return settings.customMessages[test] || messages[test] || messages.fallback;
 				}
 			}
 		}
